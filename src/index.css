@@ -1,0 +1,113 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.App {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, rgb(81, 10, 107) 0%, rgb(186, 66, 213) 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.inp {
+  margin: 15px;
+  padding: 15px 20px;
+  font-size: 15px;
+  width: 100%;
+  max-width: 500px;
+  height: 50px;
+  border: 10px solid #ddd;
+  border-radius: 100px;
+  background-color: #fff;
+  color: #333;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.inp:focus {
+  outline: none;
+  border-color: #ff69b4;
+  box-shadow: 0 0 8px rgba(255, 105, 180, 0.6);
+}
+
+.btn {
+  padding: 12px 28px;
+  font-size: 18px;
+  color: white;
+  background-color: #ff69b4;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #d94c8b;
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  background-color: #c02f6b;
+  transform: translateY(0);
+}
+
+.btn:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+.error {
+  color: #ff4d4d;
+  font-weight: bold;
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.lyrics-display {
+  margin-top: 20px;
+  text-align: left;
+  background-color: rgb(195, 161, 226);
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 900px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  word-wrap: break-word;
+  font-size: 16px;
+  color: black;
+  line-height: 1.8;
+  font-family: 'Arial', sans-serif;
+  white-space: pre-line;
+}
+
+.lyrics-display p {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #000000;
+}
+
+.lyrics-display br {
+  margin-bottom: 10px;
+}
+
+.lyrics-display {
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
